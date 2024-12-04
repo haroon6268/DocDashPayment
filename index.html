@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>DocDash Payment</title>
+	</head>
+	<body>
+		<div class="main">
+			<div class="left">
+				<div class="left-nav">
+					<span class="span-flex">
+						<img src="/public/cart.svg" />
+						<p style="font-size: 20px; margin-left: 5px; font-weight: bold">
+							Order Summary
+						</p></span
+					>
+					<span class="span-flex"
+						><img src="/public/arrow-back.svg" />
+						<p style="font-size: 17px; margin-left: 5px">Go Back</p></span
+					>
+				</div>
+				<div class="cart">
+					<div id="item-1">
+						<div style="display: flex; align-items: center">
+							<img src="/public/doctor.png" style="height: 130px" />
+							<div id="item-1-text" style="margin-left: 25px">
+								<p style="font-weight: bold; font-size: 15px">
+									In-Home Wellness Checkup
+								</p>
+								<p style="font-size: 13px">Dr. Emily Johnson</p>
+							</div>
+						</div>
+						<div id="item-1-price">
+							<p style="font-weight: bold">$172.50</p>
+							<img src="/public/trash.svg" style="scale: 0.8" />
+						</div>
+					</div>
+				</div>
+				<div id="pricing">
+					<hr />
+					<div id="subtotal" class="pricing-flex">
+						<p>Subtotal</p>
+						<p>$172.50</p>
+					</div>
+					<div id="service-fee" class="pricing-flex">
+						<p>Service Fee</p>
+						<p>$17.55</p>
+					</div>
+					<div id="taxes" class="pricing-flex">
+						<p>Taxes</p>
+						<p>$12.29</p>
+					</div>
+					<div id="total" class="pricing-flex">
+						<p style="color: black">Total (including tax)</p>
+						<p style="color: black">$204.34</p>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div id="payment-form">
+					<div>
+						<div class="form-grouping">
+							<p style="font-weight: bold; margin-bottom: 10px">
+								Name of Card Holder
+							</p>
+							<input class="reg-input" id="name" />
+						</div>
+						<div class="form-grouping">
+							<div style="display: flex; justify-content: space-between">
+								<p style="font-weight: bold; margin-bottom: 10px">
+									Card Number
+								</p>
+								<p
+									style="
+										color: rgb(231, 97, 97);
+										font-weight: bold;
+										display: none;
+									"
+									id="card-number-error"
+								>
+									Incorrect Length
+								</p>
+							</div>
+							<input class="reg-input" id="card-number" />
+						</div>
+						<div style="display: flex; justify-content: left; width: 250px">
+							<div class="form-grouping">
+								<p style="font-weight: bold; margin-bottom: 10px">Expiration</p>
+								<input
+									class="reg-input"
+									style="width: 200px; text-align: center"
+									placeholder="MM/YY"
+									id="expiration"
+								/>
+							</div>
+							<div class="form-grouping" style="margin-left: 25px">
+								<p style="font-weight: bold; margin-bottom: 10px">CVC</p>
+								<input
+									class="reg-input"
+									style="width: 100px; text-align: center"
+									id="cvc"
+								/>
+							</div>
+						</div>
+						<div class="form-grouping">
+							<p style="font-weight: bold; margin-bottom: 10px">Zip Code</p>
+							<input class="reg-input" style="width: 200px" id="zipcode" />
+						</div>
+					</div>
+					<button
+						style="
+							width: 300px;
+							height: 50px;
+							border: none;
+							border-radius: 25px;
+							color: #93b4c4;
+							font-weight: bold;
+							cursor: pointer;
+						"
+						id="pay-button"
+					>
+						Pay Amount
+					</button>
+					<p
+						style="margin-top: 20px; font-weight: bold; display: none"
+						id="result"
+					></p>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

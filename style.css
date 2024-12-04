@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: #737373;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.main {
+	display: flex;
+	width: 100vw;
+	justify-content: space-around;
+	height: 100vh;
+}
+
+.right {
+	background: linear-gradient(90deg, #ebf4f5, #b5c6e0);
+	width: 50%;
+	padding: 20px;
+}
+
+.left {
+	width: 50%;
+	padding: 20px;
+}
+
+.span-flex {
+	display: flex;
+}
+
+.left-nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cart {
+	height: 60vh;
+	margin-top: 60px;
+}
+
+#item-1 {
+	height: 20vh;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+#item-1-price {
+	display: flex;
+	align-items: center;
+}
+
+.pricing-flex {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 25px;
+}
+
+#pricing {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.right {
+	padding: 10px;
+}
+
+.reg-input {
+	width: 400px;
+	height: 35px;
+	border: none;
+	opacity: 59%;
+	color: black;
+	border-radius: 5px;
+}
+
+.form-grouping {
+	margin-bottom: 30px;
+}
+
+#payment-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+}
+
+#pay-button:hover {
+	opacity: 0.7;
+}
